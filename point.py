@@ -12,7 +12,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return self.y
 
     def distance_from_Ycoordinate(self):
         """
@@ -23,7 +23,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return self.x 
 
     def getQuadrant(self):
         """
@@ -45,7 +45,7 @@ class Point:
         Returns:
             bool: result.
         """
-        pass
+        return self.y == 0
 
     def on_Ycoordinate(self):
         """
@@ -56,5 +56,12 @@ class Point:
         Returns:
             bool: result.
         """
-        pass
+        return self.x == 0
  
+x = Point(x = 0,y = -6)
+x1 = Point(x = -3,y = 4)
+print(x.distance_from_Xcoordinate())
+print(x.distance_from_Ycoordinate())
+print(x.getQuadrant())
+print(x.on_Xcoordinate())
+print(x1.on_Ycoordinate()) 
